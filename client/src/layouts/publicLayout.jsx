@@ -1,4 +1,6 @@
 import { Outlet } from "react-router-dom";
+import { HeartPulse } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 
 function PublicLayout() {
@@ -14,61 +16,43 @@ function PublicLayout() {
 
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-8">
-          <div className="grid gap-8 md:grid-cols-3">
-            
-            {/* Brand */}
-            <div>
-              <h2 className="text-xl font-bold text-blue-600">
-                QueueCare
-              </h2>
-
-              <p className="mt-2 max-w-sm text-sm leading-6 text-slate-500">
-                Skip the waiting room. Track your hospital queue
-                in real time and know exactly when it's your turn.
+        <div className="mx-auto max-w-7xl px-5 py-10 sm:px-8 lg:px-10">
+          <div className="flex flex-col justify-between gap-8 md:flex-row md:items-center">
+            <div className="max-w-sm">
+              <Link to="/" className="inline-flex items-center gap-2.5">
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-700">
+                  <HeartPulse className="text-white" size={19} />
+                </span>
+                <span className="text-lg font-bold tracking-tight text-slate-950">
+                  Queue<span className="text-blue-700">Care</span>
+                </span>
+              </Link>
+              <p className="mt-3 text-sm leading-6 text-slate-500">
+                A simpler way to plan your hospital visit and keep track of
+                your queue.
               </p>
             </div>
 
-            {/* Quick Links */}
-            <div>
-              <h3 className="font-semibold text-slate-900">
-                Quick Links
-              </h3>
-
-              <div className="mt-3 space-y-2 text-sm text-slate-500">
-                <p className="cursor-pointer hover:text-blue-600">
-                  Home
-                </p>
-
-                <p className="cursor-pointer hover:text-blue-600">
-                  Hospitals
-                </p>
-
-                <p className="cursor-pointer hover:text-blue-600">
-                  Doctors
-                </p>
-
-                <p className="cursor-pointer hover:text-blue-600">
-                  Contact
-                </p>
-              </div>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h3 className="font-semibold text-slate-900">
-                Contact
-              </h3>
-
-              <div className="mt-3 space-y-2 text-sm text-slate-500">
-                <p>support@queuecare.com</p>
-                <p>+91 98765 43210</p>
-                <p>India</p>
-              </div>
+            <div className="flex flex-wrap gap-x-7 gap-y-3 text-sm font-medium text-slate-600">
+              <Link to="/" className="transition hover:text-blue-700">
+                Home
+              </Link>
+              <Link to="/#departments" className="transition hover:text-blue-700">
+                Departments
+              </Link>
+              <Link to="/#how-it-works" className="transition hover:text-blue-700">
+                How it works
+              </Link>
+              <Link to="/login" className="transition hover:text-blue-700">
+                Log in
+              </Link>
+              <Link to="/register" className="transition hover:text-blue-700">
+                Get started
+              </Link>
             </div>
           </div>
 
-          <div className="mt-8 border-t border-slate-200 pt-5 text-center text-sm text-slate-500">
+          <div className="mt-8 border-t border-slate-100 pt-5 text-xs text-slate-400">
             © 2026 QueueCare. All rights reserved.
           </div>
         </div>
