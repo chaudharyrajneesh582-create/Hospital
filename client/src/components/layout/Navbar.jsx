@@ -19,9 +19,6 @@ const Navbar = () => {
             </span>
             <span className="text-lg font-bold tracking-tight text-slate-950">
               Queue<span className="text-blue-700">Care</span>
-              <span className="ml-2 hidden text-xs font-medium tracking-normal text-slate-400 sm:inline">
-                Care, without the wait
-              </span>
             </span>
           </Link>
 
