@@ -1,4 +1,3 @@
-```jsx
 import {
   CalendarDays,
   CheckCircle,
@@ -69,4 +68,3 @@ function StatCard({
 }
 
 export default StatCard;
-```

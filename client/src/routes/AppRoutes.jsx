@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 
 // Layouts
-import PublicLayout from "../layouts/PublicLayout";
-import DashboardLayout from "../layouts/DashboardLayout";
+import PublicLayout from "../layouts/publicLayout";
+import DashboardLayout from "../layouts/dashboardLayout";
 
 // Public Pages
 import Home from "../pages/Home";
@@ -11,8 +11,7 @@ import Register from "../pages/Register";
 import NotFound from "../pages/NotFound";
 
 // Patient Pages
-import PatientDashboard from "../pages/patient/PatientDashboard";
-import QueueTracker from "../pages/patient/QueueTracker";
+import PatientDashboard from "../pages/patient/patientDashboard";
 
 // Staff Pages
 import StaffDashboard from "../pages/staff/StaffDashboard";
@@ -50,7 +49,7 @@ function AppRoutes() {
 
         <Route
           path="/patient/queue"
-          element={<QueueTracker />}
+          element={<PatientDashboard />}
         />
 
         {/* ---------------- STAFF ---------------- */}

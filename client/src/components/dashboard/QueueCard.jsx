@@ -1,4 +1,3 @@
-```jsx
 import {
   Clock,
   Users,
@@ -188,4 +187,3 @@ function QueueCard() {
 }
 
 export default QueueCard;
-```

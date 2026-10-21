@@ -1,4 +1,3 @@
-```jsx
 import {
   HeartPulse,
   Brain,
@@ -79,4 +78,3 @@ function DepartmentCard({
 }
 
 export default DepartmentCard;
-```

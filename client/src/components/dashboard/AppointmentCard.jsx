@@ -1,4 +1,3 @@
-```jsx
 import {
   CalendarDays,
   Clock,
@@ -157,4 +156,3 @@ function AppointmentCard() {
 }
 
 export default AppointmentCard;
-```
